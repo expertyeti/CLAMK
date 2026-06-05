@@ -1,0 +1,40 @@
+.profile-container {
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    transform: translateY(50%); 
+    width: 420px;          
+    max-width: 45vw;       
+    min-width: 140px;      
+    aspect-ratio: 1 / 1;   
+    background-color: transparent; 
+    z-index: 10; 
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
+    position: relative; 
+    z-index: 2; 
+}
+
+@keyframes volar {
+    0% { transform: scaleX(-1) translate(-110px, 30px); }
+    50% { transform: scaleX(-1) translate(-110px, 15px); }
+    100% { transform: scaleX(-1) translate(-110px, 30px); }
+}
+
+.logo-complement {
+    display: none; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 220px;          
+    max-width: 45vw;       
+    min-width: 140px;      
+    transform: scaleX(-1) translate(-110px, 30px);
+    z-index: 11; 
+    animation: volar 3s ease-in-out infinite;
+}

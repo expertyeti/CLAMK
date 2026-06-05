@@ -1,0 +1,43 @@
+/* --- REGLAS DE PROTECCIÓN GLOBALES --- */
+* {
+    /* Evita que se pueda sombrear/seleccionar el texto */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /* Quita el cuadro o destello azul al tocar botones/enlaces en móviles */
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Protecciones específicas para todas las imágenes */
+img {
+    /* Evita que la imagen pueda ser arrastrada hacia otra pestaña o escritorio */
+    -webkit-user-drag: none;
+    user-drag: none;
+    
+    /* Desactiva los eventos del mouse (evita el clic derecho para "Guardar imagen como...") */
+    pointer-events: none;
+}
+
+/* --- ESTILOS BASE ORIGINALES --- */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white; 
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column; 
+}
+
+.main-content {
+    background-color: #f3e9d1; 
+    flex-grow: 1; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

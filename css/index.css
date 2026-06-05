@@ -1,0 +1,8 @@
+/* Importar todos los módulos CSS */
+@import 'base.css';
+@import 'header.css';
+@import 'logo.css';
+@import 'sidebar.css';
+@import 'about.css';
+@import "instructions.css";
+@import 'responsive.css';

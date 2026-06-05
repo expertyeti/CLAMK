@@ -1,0 +1,41 @@
+.header-wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 5; 
+}
+
+.banner-container {
+    margin: 0;
+    width: 100%;
+    height: 300px; 
+    overflow: hidden;
+    filter: blur(2px);
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    transform: scale(1.02); 
+}
+
+.text-section {
+    background-color: white;
+    width: 100%;
+    padding: 5px 5% 15px 0; 
+    box-sizing: border-box;
+    text-align: right; 
+    position: relative;
+    z-index: 4; 
+}
+
+.welcome-text {
+    font-family: 'Sanchez', serif; 
+    color: #e1c288; 
+    font-size: clamp(16px, 3vw, 28px); 
+    white-space: nowrap; 
+    margin: 0; 
+    display: inline-block; 
+}

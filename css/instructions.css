@@ -1,0 +1,62 @@
+/* Contenedor principal de la lista */
+.instructors-section {
+    background-color: #bca98d; /* Mismo fondo de la sección about */
+    padding: 30px;
+    margin-top: 40px; /* Separación respecto a Sobre Nosotros */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre cada tarjeta de instructor */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Tarjeta individual de instructor */
+.instructor-card {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* Marco blanco para la foto (similar al marco de las cartas) */
+.instructor-img-wrapper {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+    width: 160px; /* Tamaño fijo de la foto */
+    flex-shrink: 0; /* Impide que la imagen se encoja */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instructor-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1; /* Garantiza que la imagen sea perfectamente cuadrada */
+}
+
+/* Caja de texto del instructor sin borde */
+.instructor-text-box {
+    background-color: #e1c288; /* Color de fondo solicitado */
+    padding: 15px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el texto verticalmente */
+    
+    /* Fuente Serif para que coincida con la imagen de referencia */
+    font-family: 'Sanchez', serif; 
+    color: #4a3f35;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Eliminar márgenes excesivos de los párrafos interiores */
+.instructor-text-box p {
+    margin: 0 0 5px 0;
+}
+
+.instructor-text-box p:last-child {
+    margin-bottom: 0;
+}

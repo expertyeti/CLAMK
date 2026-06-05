@@ -1,0 +1,149 @@
+.sidebar {
+    width: 420px;
+    max-width: 45vw;
+    margin-top: calc((min(45vw, 420px) / 2) - 48px); 
+    padding: 0 5% 40px 5%;
+    background-color: transparent; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    box-sizing: border-box;
+    transition: transform 0.3s ease; 
+    flex-shrink: 0; 
+    
+    position: sticky;
+    top: 20px; 
+    align-self: flex-start; 
+    max-height: calc(100vh - 40px); 
+    overflow-y: auto; 
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.mobile-menu-btn, .close-btn { display: none; }
+
+.sidebar-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 36px;
+    color: #4a3f35; 
+    margin: 0 0 5px 0;
+    font-weight: 600;
+}
+
+.sidebar-subtitle {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #5c5346;
+    margin: 0 0 20px 0;
+    line-height: 1.4;
+}
+
+.contact-pill {
+    display: flex;
+    align-items: center;
+    background-color: #e3c490; 
+    border-radius: 30px;
+    padding: 10px 20px 10px 15px;
+    text-decoration: none;
+    color: #4a3f35;
+    font-family: sans-serif;
+    min-height: 40px;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    flex-shrink: 0;
+    font-size: 26px;
+}
+
+/* Imágenes de Iconos (Mapa y Teléfono) */
+.icon-map-img { width: 100%; height: 100%; object-fit: contain; }
+.icon-phone-img { width: 100%; height: 100%; object-fit: contain; }
+
+.icon-insta { color: #E1306C; font-size: 32px; }
+.icon-fb { color: #1877F2; font-size: 32px; background: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; }
+.icon-yt { color: #FF0000; font-size: 30px; }
+
+.icon-box-black {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+    margin-right: 18px;
+}
+
+.pill-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.pill-text.address { font-size: 11px; line-height: 1.3; }
+.pill-text.underline { text-decoration: underline; }
+
+/* --- EFECTO DE DESPRENDIMIENTO / BURBUJA (Gooey sin Opacidad) --- */
+
+.location-pill-container {
+    position: relative;
+    width: 100%;
+    z-index: 50; 
+    cursor: pointer;
+    outline: none;
+}
+
+.location-pill {
+    position: relative;
+    z-index: 2; 
+}
+
+.map-tooltip {
+    position: absolute;
+    top: 50%; /* Nace justo desde el centro de la píldora */
+    left: 50%;
+    width: 280px;
+    height: 200px;
+    background-color: #e3c490;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    
+    /* Configuración clave: Empieza con tamaño 0 y detrás de la píldora */
+    transform-origin: top center;
+    transform: translateX(-50%) scale(0) translateY(0);
+    pointer-events: none;
+    z-index: 1;
+    
+    /* Sin transiciones de opacidad, solo tamaño y movimiento */
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.map-tooltip iframe {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    background-color: white; 
+}
+
+/* Al pasar el mouse, crece a su tamaño normal (1) y baja (translateY) para separarse */
+.location-pill-container:hover .map-tooltip,
+.location-pill-container:focus .map-tooltip {
+    transform: translateX(-50%) scale(1) translateY(45px); 
+    pointer-events: auto;
+}

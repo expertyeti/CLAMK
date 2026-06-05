@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Sanchez&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <div class="header-wrapper">
+        <div class="banner-container">
+            <img src="assets/banner.jpg" alt="Banner superior" class="banner-img">
+        </div>
+        
+        <div class="profile-container">
+            <img src="assets/logo.png" alt="Logo principal" class="profile-img">
+            <img src="assets/logo-complement.png" alt="Complemento" class="logo-complement">
+        </div>
+    </div>
+
+    <div class="text-section">
+        <div class="welcome-text">
+            "Aquí encontrarás un lugar para ti."
+        </div>
+    </div>
+
+    <div class="main-content">
+        
+        <button class="mobile-menu-btn" id="openMenuBtn">
+            <i class="fa-solid fa-bars"></i> Contacto
+        </button>
+
+        <div class="overlay" id="overlay"></div>
+
+        <aside class="sidebar" id="sidebar">
+            <button class="close-btn" id="closeMenuBtn"><i class="fa-solid fa-xmark"></i></button>
+
+            <h1 class="sidebar-title">Clamk art</h1>
+            <p class="sidebar-subtitle">Institución de artes independiente con diversas especialidades</p>
+
+            <div class="location-pill-container" tabindex="0">
+                <div class="contact-pill location-pill">
+                    <div class="icon-box">
+                        <img src="assets/mapa.png" alt="Mapa" class="icon-map-img">
+                    </div>
+                    <div class="pill-text address">Prolongación Galeana. San Martín Tepetlixpan. Cuautitlán Izcalli. CP. 54763. EDOMEX. México.</div>
+                </div>
+                
+                <div class="map-tooltip">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15024.123456789!2d-99.208123!3d19.645123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21f123456789%3A0x123456789abcdef!2sSan%20Mart%C3%ADn%20Tepetlixpan%2C%20Cuautitl%C3%A1n%20Izcalli%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="contact-pill">
+                <div class="icon-box">
+                    <img src="assets/phone.png" alt="Teléfono" class="icon-phone-img">
+                </div>
+                <div class="pill-text">
+                    <span>55 7400 2843</span>
+                    <span>55 2894 8914</span>
+                </div>
+            </div>
+
+            <a href="https://www.instagram.com/clamk_art/" target="_blank" class="contact-pill">
+                <div class="icon-box icon-insta"><i class="fa-brands fa-instagram"></i></div>
+                <div class="pill-text underline">@clamk_art</div>
+            </a>
+
+            <a href="#" class="contact-pill">
+                <div class="icon-box icon-fb"><i class="fa-brands fa-facebook"></i></div>
+                <div class="pill-text underline">@CLAMK</div>
+            </a>
+
+            <a href="#" class="contact-pill">
+                <div class="icon-box icon-yt"><i class="fa-brands fa-youtube"></i></div>
+                <div class="pill-text"> </div>
+            </a>
+
+            <a href="https://www.tiktok.com/@ale.clamk?lang=es-419" target="_blank" class="contact-pill">
+                <div class="icon-box-black"><i class="fa-brands fa-tiktok"></i></div>
+                <div class="pill-text underline">@ale.clamk</div>
+            </a>
+
+            <a href="#" class="contact-pill">
+                <div class="icon-box-black"><i class="fa-brands fa-twitter"></i></div>
+                <div class="pill-text underline">@CLAMKepo68</div>
+            </a>
+        </aside>
+
+        <main class="content-area">
+            
+            <div class="about-section">
+                <div class="about-content">
+                    <h2 class="about-title">Sobre nosotros:</h2>
+                    <div class="about-text-box">
+                        Somos un espacio creado para todos los apasionados del arte, la cultura y la libre expresión. <br>
+                        Contamos con diferentes talleres y especialidades:
+                        <ul class="about-list">
+                            <li><i class="fa-solid fa-microphone-lines icon-specialty"></i> Doblaje y Diseño Digital</li>
+                            <li><i class="fa-solid fa-masks-theater icon-specialty"></i> Teatro</li>
+                            <li><i class="fa-solid fa-paintbrush icon-specialty"></i> Maquillaje Artístico</li>
+                            <li><i class="fa-solid fa-palette icon-specialty"></i> Artes Aplicadas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-image-container">
+                    <div class="about-image-frame">
+                        <img src="assets/cartas.jfif" alt="Cartas con pluma" class="about-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructors-section">
+                
+                <div class="instructor-card">
+                    <div class="instructor-img-wrapper">
+                        <img src="assets/spe/doblaje.jfif" alt="Doblaje">
+                    </div>
+                    <div class="instructor-text-box">
+                        <p>Impartido por: Karina Itzel Carrasco Olmedo</p>
+                        <p>Experiencia: 10 años</p>
+                        <p>Directora de doblaje</p>
+                        <p>Diplomado en diseño gráfico</p>
+                        <p>Enseñanzas: Control de tono, control de voz, dicción, diseño de anatomía, perspectiva, uso del círculo cromático.</p>
+                    </div>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-img-wrapper">
+                        <img src="assets/spe/teatro.jfif" alt="Teatro">
+                    </div>
+                    <div class="instructor-text-box">
+                        <p>Impartido por: Abigail Ramirez Lazo</p>
+                        <p>Experiencia: 6 años en artes escénicas</p>
+                        <p>Actriz y docente de teatro</p>
+                        <p>Licenciatura en Artes Escénicas con especialidad en Actuación</p>
+                        <p>Enseñanzas: Actuación teatral, construcción de personajes, dicción, expresión corporal, improvisación, teatro musical, confianza escénica y trabajo colaborativo.</p>
+                    </div>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-img-wrapper">
+                        <img src="assets/spe/maquillaje.jfif" alt="Maquillaje">
+                    </div>
+                    <div class="instructor-text-box">
+                        <p>Impartido por: Aitanna Mariale Jiménez López</p>
+                        <p>Experiencia: 4 años</p>
+                        <p>Maquilladora</p>
+                        <p>Diploma en cosmetología</p>
+                        <p>Enseña: pigmentación, técnicas y aprender a aplicar el producto</p>
+                    </div>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-img-wrapper">
+                        <img src="assets/spe/artes.jfif" alt="Artes Aplicadas">
+                    </div>
+                    <div class="instructor-text-box">
+                        <p>Impartido por: Ariana Lizeth Flores Pavana</p>
+                        <p>Experiencia: 6 años</p>
+                        <p>Especialista en Artes Aplicadas y Oficios.</p>
+                        <p>Técnica en artesanía y decoración.</p>
+                        <p>Enseñanza: Técnicas fáciles de corte, armado y modelado; creación de adornos y figuras paso a paso; acabados y detalles de calidad; empaques creativos para tus productos; y cómo poner precio a tus manualidades para venderlas.</p>
+                    </div>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-img-wrapper">
+                        <img src="assets/spe/cancion.jfif" alt="Música">
+                    </div>
+                    <div class="instructor-text-box">
+                        <p>Impartido por: Camila Radilla Tellez</p>
+                        <p>Experiencia: 8 años</p>
+                        <p>Cantante</p>
+                        <p>Diplomado en Música</p>
+                        <p>Enseña: Afinación, reconocimiento de tonos, escritura de partituras, agudos y graves</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const openBtn = document.getElementById('openMenuBtn');
+        const closeBtn = document.getElementById('closeMenuBtn');
+        const overlay = document.getElementById('overlay');
+
+        openBtn.addEventListener('click', () => { 
+            sidebar.classList.add('active'); 
+            overlay.classList.add('active');
+        });
+
+        const closeMenu = () => {
+            sidebar.classList.remove('active'); 
+            overlay.classList.remove('active');
+        };
+
+        closeBtn.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.content-area {
+    flex-grow: 1;
+    padding: 40px 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section {
+    background-color: #bca98d;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    align-items: stretch; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about-content {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 38px;
+    color: #4a3f35;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.about-text-box {
+    background-color: #e1c288;
+    border: 6px solid #9d9383;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: sans-serif;
+    color: #4a3f35;
+    font-size: 18px;
+    line-height: 1.4;
+    flex-grow: 1; 
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Separación entre el icono y el texto */
+}
+
+/* Colores para los nuevos iconos de FontAwesome */
+.icon-specialty {
+    color: #4a3f35;
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+}
+
+.about-image-container {
+    flex: 1 1 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image-frame {
+    background-color: white;
+    padding: 15px; 
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.3); 
+    border: 1px solid #ccc; 
+    max-width: 100%;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
